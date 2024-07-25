@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock & Roll Hall of Fame Viz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>The Rock & Roll Hall of Fame: Examining The Gender Gap</h1>
+        <p>Rock & Roll Hall of Fame inductees from 1986 to 2024</p>
+        <div class="controls">
+            <h2 id="categoryHeader"></h2>
+            <select id="categorySelect" disabled>
+                <option value="all">All</option>
+            </select>
+        </div>
+        <div id="chart"></div>
+        <div id="legend"></div>
+        <div class="tooltip" style="opacity:0;"></div>
+    </div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="script.js?v=4"></script> <!-- handles script loading so old js file isn't cached -->
+</body>
+</html>

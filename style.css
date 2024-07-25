@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(205, 228, 194);
+    font-size: 14px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+#chart {
+    margin-top: 20px;
+    position: relative;
+}
+
+.legend rect {
+    width: 18px;
+    height: 18px;
+}
+
+.legend text {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+#categoryHeader {
+    margin: 0;
+}
+
+#categorySelect {
+    margin-left: 10px;
+}
+
+.annotation-box {
+    position: absolute;
+    width: 210px;
+    padding: 5px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff3b0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.annotation-box::before {
+    content: "";
+    position: absolute;
+    top: 3px; 
+    left: -15px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #fff3b0 transparent transparent;
+}
